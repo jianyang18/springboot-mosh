@@ -1,6 +1,7 @@
 package com.jian.store_mosh;
 
 import com.jian.store_mosh.entitites.Address;
+import com.jian.store_mosh.entitites.Profile;
 import com.jian.store_mosh.entitites.User;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -27,6 +28,10 @@ public class StoreMoshApplication {
 
         user.addAddress(address);
         System.out.println(user);
+
+        var profile = Profile.builder()
+                .bio("bio")
+                .build();
     }
 
 }
